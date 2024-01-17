@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <data>
+                <variable
+                    name="product"
+                    type="com.bitcodetech.machine2.models.Product" />
+        </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+                <ImageView
+                    image_url="@{product.image}"
+                    android:id="@+id/imgProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:text="@{product.id}"
+                    android:id="@+id/txtId"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{product.title}"
+                    android:id="@+id/txtTitle"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{product.description}"
+                    android:id="@+id/txtDescription"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{String.valueOf(product.price)}"
+                    android:id="@+id/txtPrice"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="@{product.rating}"
+                    android:id="@+id/txtRating"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{product.stock}"
+                    android:id="@+id/txtStock"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{product.brand}"
+                    android:id="@+id/txtBrand"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{product.category}"
+                    android:id="@+id/txtCategory"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+</layout>
